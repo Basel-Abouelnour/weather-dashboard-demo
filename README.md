@@ -27,3 +27,30 @@ this is a weather app written in python in the 30-day-devops-challenge #DevOpsAl
 
 ### Saving Data to the S3 Bucket
 - After finishing fetching the data, it saves it to the S3 bucket we created before each as an object with the timestamp for each city
+
+---
+
+## Output sample
+- this is an ouput sample for two cities Beni Suef and Cairo :-
+```
+$ python src/weather-dashboard.py
+
+Bucket weather-dashboard-24462 exists
+Successfully created bucket weather-dashboard-24462
+
+Fetching weather for Beni Suef...
+Temperature: 21.92°C
+Feels like: 21.03°C
+Humidity: 33%
+Conditions: overcast clouds
+Successfully saved data for Beni Suef to S3
+Weather data for Beni Suef saved to S3!
+
+Fetching weather for Cairo...
+Temperature: 20.42°C
+Feels like: 19.69°C
+Humidity: 45%
+Conditions: scattered clouds
+Successfully saved data for Cairo to S3
+Weather data for Cairo saved to S3!
+```
